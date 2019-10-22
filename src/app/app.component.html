@@ -1,12 +1,9 @@
 <ul>
-  <app-usuario *ngFor="let user of users" [name_user]="user"></app-usuario>
+  <li>
+    <a [routerLink]="['/']" > Home </a>
+  </li>
+  <li>
+     <a [routerLink]="['/about']" > About </a>
+  </li>
 </ul>
-
-<div>
-  <p>name : {{ name }}</p>
-  <p>Street : {{ address.street }}</p>
-  <p>City : {{ address.city }}</p>
-  <ul>
-    <li *ngFor="let hob of hobbies"> {{ hob }}</li>
-  </ul>
-</div>
+<router-outlet></router-outlet>

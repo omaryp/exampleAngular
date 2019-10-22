@@ -13,5 +13,8 @@ export class UsuarioComponent implements OnInit {
 
   ngOnInit() {
   }
+  deleteUser(user){
+    alert("hola");
+  }
 
 }
